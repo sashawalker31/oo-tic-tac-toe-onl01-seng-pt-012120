@@ -19,5 +19,6 @@ class TicTacToe
     @board[index] = user_marker
   end
   
-  
+  def position_taken
+    
 end 
