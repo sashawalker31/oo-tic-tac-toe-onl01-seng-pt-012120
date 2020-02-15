@@ -19,6 +19,10 @@ class TicTacToe
     @board[index] = user_marker
   end
   
-  def position_taken
+  def position_taken?(board, move)
+    !(board[move] == " " || board[move] == "" || board[move] == nil)
+  end
+  
+  def valid_move
     
 end 
