@@ -23,5 +23,10 @@ class TicTacToe
     !(board[move] == " " || board[move] == "" || board[move] == nil)
   end
   
-  
+  def valid_move?(board,position)
+    position.to_i.between?(1,9) and not position_taken?(board, position.to_i - 1)
+  end
+
+  def turn 
+
 end 
